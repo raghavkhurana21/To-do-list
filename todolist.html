@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> Todo List</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="tab_area">
+            <h1>To - do List</h1>
+            <p>Start building your <Span>productive</Span> life from here.</p>
+        </div>
+        <div class="content">
+            <form class="todo">
+                <input type="number" id="priority" placeholder="priority " min="1">
+                <input type="text" id="task" placeholder="new task (required)" required>
+                <input type="date" id="date">
+                <input type="time" id="time">
+                <input type="submit" class="submit subTodo" value="Submit">
+            </form>
+            <section class="list">
+                <div class="title">
+                    <div class="priTitle">
+                        <div class="sortUp priUp"><i class="far fa-arrow-alt-circle-up"></i>
+                        </div>
+                        <p class="pri">Priority</p>
+                        <div class="sortDown priDown"><i class="far fa-arrow-alt-circle-down"></i>
+                        </div>
+                    </div>
+                    <div class="taskTitle">
+                        <div class="sortUp  taskDone"><i class="far fa-check-circle"></i></div>
+                        <p class="task">Task</p>
+                        <div class="sortDown taskUndone"><i class="far fa-dot-circle"></i></div>
+                    </div>
+                    <div class="dateTitle">
+                        <div class="sortUp dateUp"><i class="far fa-arrow-alt-circle-up"></i>
+                        </div>
+                        <p class="dueDate">Date</p>
+                        <div class="sortDown dateDown"><i class="far fa-arrow-alt-circle-down"></i>
+                        </div>
+                    </div>
+                    <p class="dueTime">Time</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
